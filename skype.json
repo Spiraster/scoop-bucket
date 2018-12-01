@@ -1,0 +1,20 @@
+{
+    "homepage": "https://www.skype.com/",
+    "version": "8.34.0.78",
+    "url": "https://go.skype.com/windows.desktop.download#/SkypeSetup.exe",
+    "hash": "3e7520eea1652b2ae203edbe1e9ed2946d3f93592071e7962f666ca656e86627",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "Skype.exe",
+            "Skype"
+        ]
+    ],
+    "checkver": {
+        "url": "https://support.skype.com/en/faq/FA12041/what-platforms-is-skype-available-on",
+        "re": "for Windows Desktop version&nbsp;</span>([\\d.]+)</div>"
+    },
+    "autoupdate": {
+        "url": "https://go.skype.com/windows.desktop.download#/SkypeSetup.exe"
+    }
+}

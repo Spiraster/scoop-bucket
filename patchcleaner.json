@@ -1,0 +1,27 @@
+{
+    "homepage": "http://www.homedev.com.au/Free/PatchCleaner",
+    "description": "A tool for cleaning the Windows installer directory.",
+    "version": "1.4.2.0",
+    "url": "https://downloads.sourceforge.net/project/patchcleaner/PatchCleaner_Portable/v1.4.2.0/PatchCleanerPortable_1_4_2_0.7z",
+    "hash": "sha1:f57befb292a9ff5e2a82ba440042e544064970d6",
+    "installer": {
+        "script": [
+            "Move-Item \"$dir\\PatchCleanerPortable_*\\PatchCleaner\\*\" \"$dir\"",
+            "Remove-Item -Force -Recurse \"$dir\\PatchCleanerPortable_*\""
+        ]
+    },
+    "bin": "PatchCleaner.exe",
+    "shortcuts": [
+        [
+            "PatchCleaner.exe",
+            "PatchCleaner"
+        ]
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/patchcleaner/files/PatchCleaner_Portable/",
+        "re": "https://sourceforge.net/projects/patchcleaner/files/PatchCleaner_Portable/v([\\d.]+)/"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/patchcleaner/PatchCleaner_Portable/v$version/PatchCleanerPortable_$underscoreVersion.7z"
+    }
+}
