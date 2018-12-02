@@ -1,0 +1,16 @@
+{
+    "homepage": "https://blogs.msdn.microsoft.com/nikolad/2006/04/11/visual-c-2005-redistributable-package-is-released-to-the-web/",
+    "version": "8.0.50727.762",
+    "url": [
+        "https://download.microsoft.com/download/d/4/1/d41aca8a-faa5-49a7-a5f2-ea0aa4587da0/vcredist_x64.exe",
+        "https://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe"
+    ],
+    "hash": [
+        "7CCBF7AFF0D190DB0831E5F22BB200ADAA4CD5EC6E1147AAA19FE87627EF666F",
+        "EB00F891919D4F894AB725B158459DB8834470C382DC60CD3C3EE2C6DE6DA92C"
+    ],
+    "post_install": [
+        "run \"$dir/vcredist_x64.exe\" \"/qb\"",
+        "run \"$dir/vcredist_x86.exe\" \"/qb\""
+    ]
+}
