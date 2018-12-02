@@ -10,7 +10,10 @@
         "EB00F891919D4F894AB725B158459DB8834470C382DC60CD3C3EE2C6DE6DA92C"
     ],
     "post_install": [
-        "run \"$dir/vcredist_x64.exe\" \"/qb\"",
-        "run \"$dir/vcredist_x86.exe\" \"/qb\""
+        "run \"$dir/vcredist_x64.exe\" \"/q\"",
+        "run \"$dir/vcredist_x86.exe\" \"/q\""
+    ],
+    "notes": [
+        "You can now remove this installer with 'scoop uninstall vcredist2005'"
     ]
 }
