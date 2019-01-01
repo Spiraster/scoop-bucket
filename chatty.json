@@ -1,9 +1,9 @@
 {
     "homepage": "https://chatty.github.io",
     "description": "Chat software specifically made for Twitch, in the spirit of a classic IRC Client.",
-    "version": "0.9.2",
-    "url": "https://github.com/chatty/chatty/releases/download/v0.9.2/Chatty_0.9.2.zip",
-    "hash": "574ca8b70e101c3e16a60aac16b407a3334b36dac64181a0ff5ebf9f8467fa11",
+    "version": "0.9.3",
+    "url": "https://github.com/chatty/chatty/releases/download/v0.9.3/Chatty_0.9.3.zip",
+    "hash": "f99c14bc5914e9c623652f5f834c93c5982724739964f7039218c2d6adeaf8f5",
     "shortcuts": [
         [
             "Chatty.jar",
