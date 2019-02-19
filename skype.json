@@ -1,8 +1,8 @@
 {
     "homepage": "https://www.skype.com/",
-    "version": "8.38.0.138",
+    "version": "8.39.0.180",
     "url": "https://go.skype.com/windows.desktop.download#/SkypeSetup.exe",
-    "hash": "a581f827f9c5950ce59bba1a4f47f242c15584344bbf0002fd1175b496ba3885",
+    "hash": "55eda85db6a1e1e1073980a0c08ab5f2d80d1a76d9866e569452a9442d442b2e",
     "innosetup": true,
     "shortcuts": [
         [
