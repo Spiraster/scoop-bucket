@@ -1,0 +1,59 @@
+{
+    "version": "8.0.5",
+    "description": "A PC port of Legend of Zelda: Ocarina of Time",
+    "homepage": "https://www.shipofharkinian.com",
+    "license": "Unknown",
+    "notes": [
+        "Ship of Harkinian requires specific ROM(s) of OoT to function.",
+        "Learn more at https://www.shipofharkinian.com/setup-guide and https://ship.equipment."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/HarbourMasters/Shipwright/releases/download/8.0.5/SoH-MacReady-Foxtrot-Win64.zip",
+            "hash": "9bf557752527692cedaaff8555e521f66e2cd41f4f12c288470d4b5419d54035"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\imgui.ini\")) {",
+        "   New-Item \"$persist_dir\\imgui.ini\" | Out-Null",
+        "}"
+    ],
+    "post_install": [
+        "'oot.otr', 'oot-mq.otr' | % {",
+        "   if (Test-Path \"$persist_dir\\$_\") {",
+        "       Copy-Item -Force \"$persist_dir\\$_\" \"$dir\\$_\"",
+        "   }",
+        "}"
+    ],
+    "shortcuts": [
+        [
+            "soh.exe",
+            "Ship of Harkinian"
+        ]
+    ],
+    "persist": [
+        "mods",
+        "Save",
+        "shipofharkinian.json",
+        "imgui.ini"
+    ],
+    "pre_uninstall": [
+        "'oot.otr', 'oot-mq.otr' | % {",
+        "   if (Test-Path \"$dir\\$_\") {",
+        "       Copy-Item -Force \"$dir\\$_\" \"$persist_dir\\$_\"",
+        "   }",
+        "}"
+    ],
+    "checkver": {
+        "github": "https://github.com/HarbourMasters/Shipwright/",
+        "regex": "(?<majorName>(\\w+))\\s(?<minorName>(\\w+))\\s(?<version>([\\d\\.]+))",
+        "replace": "${version}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/HarbourMasters/Shipwright/releases/download/$version/SoH-$matchMajorname-$matchMinorname-Win64.zip"
+            }
+        }
+    }
+}
