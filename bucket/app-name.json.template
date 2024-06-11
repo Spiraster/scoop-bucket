@@ -5,6 +5,10 @@
     "homepage": "",
     "license": "",
     "notes": "",
+    "depends": "",
+    "suggest": {
+        "": ""
+    },
     "architecture": {
         "64bit": {
             "url": "",
@@ -13,32 +17,30 @@
         "32bit": {
             "url": "",
             "hash": ""
-        },
-        "arm64": {
-            "url": "",
-            "hash": ""
         }
     },
+    "innosetup": true,
     "pre_install": "",
     "installer": {
         "script": ""
     },
-    "post_install": [
-        "",
-        ""
-    ],
-    "uninstaller": {
-        "script": ""
-    },
+    "post_install": "",
     "bin": "",
-    "env_add_path": [
-        "",
-        ""
+    "shortcuts": [
+        [
+            "",
+            ""
+        ]
     ],
     "persist": [
         "",
         ""
     ],
+    "pre_uninstall": "",
+    "uninstaller": {
+        "script": ""
+    },
+    "post_uninstall": "",
     "checkver": {
         "url": "",
         "regex": ""
@@ -49,9 +51,6 @@
                 "url": ""
             },
             "32bit": {
-                "url": ""
-            },
-            "arm64": {
                 "url": ""
             }
         },
