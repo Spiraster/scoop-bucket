@@ -3,7 +3,6 @@
     "description": "Clone Hero is a free rhythm game, which can be played with any 5 or 6 button guitar controller, midi drum kit, game controller, or keyboard.",
     "homepage": "https://clonehero.net",
     "license": "Freeware",
-    "innosetup": true,
     "architecture": {
         "64bit": {
             "url": "https://github.com/clonehero-game/releases/releases/download/V1.0.0.4080/CloneHero-win64.exe",
@@ -14,6 +13,7 @@
             "hash": "6b50582b7deb760c4788698e8c8f096dfb2091d03ab11c481eb5972560669b60"
         }
     },
+    "innosetup": true,
     "post_install": "Remove-Item \"$dir\\Custom\", \"$dir\\.fullInstall\" -Recurse -Force",
     "shortcuts": [
         [
@@ -31,10 +31,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/clonehero-game/releases/releases/download/$version/CloneHero-win64.exe"
+                "url": "https://github.com/clonehero-game/releases/releases/download/v$version/CloneHero-win64.exe"
             },
             "32bit": {
-                "url": "https://github.com/clonehero-game/releases/releases/download/$version/CloneHero-win32.exe"
+                "url": "https://github.com/clonehero-game/releases/releases/download/v$version/CloneHero-win32.exe"
             }
         }
     }
