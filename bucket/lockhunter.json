@@ -1,0 +1,45 @@
+{
+    "version": "3.4.3",
+    "description": "A tool for unlocking and/or deleting files blocked unknown processes.",
+    "homepage": "https://lockhunter.com",
+    "license": "Freeware",
+    "url": "https://lockhunter.com/assets/exe/lockhuntersetup_portable_3-4-3.exe",
+    "hash": "4b7f1e4dcb91bf2be8dc31b378b9cf32053ae2c12b19bc1332e749fe26d5a4d4",
+    "innosetup": true,
+    "architecture": {
+        "64bit": {
+            "post_install": "Remove-Item \"$dir\\*32*\"",
+            "bin": [
+                [
+                    "LockHunter64.exe",
+                    "lockhunter"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "LockHunter64.exe",
+                    "LockHunter"
+                ]
+            ]
+        },
+        "32bit": {
+            "post_install": "Remove-Item \"$dir\\*64*\"",
+            "bin": [
+                [
+                    "LockHunter32.exe",
+                    "lockhunter"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "LockHunter32.exe",
+                    "LockHunter"
+                ]
+            ]
+        }
+    },
+    "checkver": "Version:\\s+([\\d.]+)",
+    "autoupdate": {
+        "url": "https://lockhunter.com/assets/exe/lockhuntersetup_portable_$dashVersion.exe"
+    }
+}
