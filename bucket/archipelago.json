@@ -3,6 +3,9 @@
     "description": "A multi-game multiworld randomizer.",
     "homepage": "https://archipelago.gg",
     "license": "MIT",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/ArchipelagoMW/Archipelago/releases/download/0.5.1/Setup.Archipelago.0.5.1.exe",
@@ -10,6 +13,11 @@
         }
     },
     "innosetup": true,
+    "post_install": [
+        "Get-ChildItem \"$persist_dir\" -File | % {",
+        "   Copy-Item -LiteralPath $_ -Destination \"$dir\" -Force",
+        "}"
+    ],
     "bin": [
         [
             "ArchipelagoLauncher.exe",
@@ -21,6 +29,16 @@
             "ArchipelagoLauncher.exe",
             "Archipelago Launcher"
         ]
+    ],
+    "persist": [
+        "custom_worlds"
+    ],
+    "pre_uninstall": [
+        "Get-ChildItem \"$dir\" | ? {",
+        "   $_.Name -match '\\.(yaml|gb|nes|sfc|z64|bin|a26)'",
+        "} | % {",
+        "   Copy-Item -LiteralPath $_ -Destination \"$persist_dir\" -Force",
+        "}"
     ],
     "checkver": {
         "github": "https://github.com/ArchipelagoMW/Archipelago"
