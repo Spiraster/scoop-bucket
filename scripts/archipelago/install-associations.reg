@@ -1,0 +1,414 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.archipelago]
+@="ArchipelagoMultidata"
+
+[HKEY_CURRENT_USER\Software\Classes\ArchipelagoMultidata]
+@="Archipelago Server Data"
+
+[HKEY_CURRENT_USER\Software\Classes\ArchipelagoMultidata\DefaultIcon]
+@="\"$archidir\\ArchipelagoServer.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\ArchipelagoMultidata\shell\open\command]
+@="\"$archidir\\ArchipelagoServer.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apworld]
+@="ArchipelagoWorldData"
+
+[HKEY_CURRENT_USER\Software\Classes\ArchipelagoWorldData]
+@="Archipelago World Data"
+
+[HKEY_CURRENT_USER\Software\Classes\ArchipelagoWorldData\DefaultIcon]
+@="\"$archidir\\ArchipelagoLauncher.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\ArchipelagoWorldData\shell\open\command]
+@="\"$archidir\\ArchipelagoLauncher.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\archipelago]
+@="Archipegalo Protocol"
+"URL Protocol"=""
+
+[HKEY_CURRENT_USER\Software\Classes\archipelago\DefaultIcon]
+@="\"$archidir\\ArchipelagoLauncher.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\archipelago\shell\open\command]
+@="\"$archidir\\ArchipelagoLauncher.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.aplttp]
+@="Archipelago.LttP"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LttP]
+@="Archipelago Link to the Past Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LttP\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LttP\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apsm]
+@="Archipelago.SM"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SM]
+@="Archipelago Super Metroid Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SM\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SM\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apdkc3]
+@="Archipelago.DKC3"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.DKC3]
+@="Archipelago Donkey Kong Country 3 Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.DKC3\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.DKC3\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apsmw]
+@="Archipelago.SMW"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SMW]
+@="Archipelago Super Mario World Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SMW\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SMW\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apzl]
+@="Archipelago.ZL"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.ZL]
+@="Archipelago Zillion Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.ZL\DefaultIcon]
+@="\"$archidir\\ArchipelagoZillionClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.ZL\shell\open\command]
+@="\"$archidir\\ArchipelagoZillionClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apsmz3]
+@="Archipelago.SMZ3"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SMZ3]
+@="Archipelago SMZ3 Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SMZ3\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SMZ3\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apsoe]
+@="Archipelago.SOE"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SOE]
+@="Archipelago Secret of Evermore Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SOE\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.SOE\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apl2ac]
+@="Archipelago.L2AC"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.L2AC]
+@="Archipelago Lufia II Ancient Cave Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.L2AC\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.L2AC\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apkdl3]
+@="Archipelago.KDL3"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.KDL3]
+@="Archipelago Kirby's Dream Land 3 Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.KDL3\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.KDL3\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apmc]
+@="Archipelago.MC"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MC]
+@="Archipelago Minecraft Data"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MC\DefaultIcon]
+@="\"$archidir\\ArchipelagoMinecraftClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MC\shell\open\command]
+@="\"$archidir\\ArchipelagoMinecraftClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apz5]
+@="Archipelago.OoT"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoT]
+@="Archipelago Ocarina of Time Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoT\DefaultIcon]
+@="\"$archidir\\ArchipelagoOoTClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoT\shell\open\command]
+@="\"$archidir\\ArchipelagoOoTClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apred]
+@="Archipelago.PkmnR"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnR]
+@="Archipelago Pokemon Red Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnR\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnR\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apblue]
+@="Archipelago.PkmnB"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnB]
+@="Archipelago Pokemon Blue Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnB\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnB\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apbn3]
+@="Archipelago.BN3"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.BN3]
+@="Archipelago MegaMan Battle Network 3 Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.BN3\DefaultIcon]
+@="\"$archidir\\ArchipelagoMMBN3Client.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.BN3\shell\open\command]
+@="\"$archidir\\ArchipelagoMMBN3Client.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apemerald]
+@="Archipelago.PkmnE"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnE]
+@="Archipelago Pokemon Emerald Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnE\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnE\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apmlss]
+@="Archipelago.MLSS"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MLSS]
+@="Archipelago Mario & Luigi Superstar Saga Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MLSS\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MLSS\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apcv64]
+@="Archipelago.CV64"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.CV64]
+@="Archipelago Castlevania 64 Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.CV64\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.CV64\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apmm2]
+@="Archipelago.MM2"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MM2]
+@="Archipelago Mega Man 2 Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MM2\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.MM2\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apladx]
+@="Archipelago.LADX"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LADX]
+@="Archipelago Links Awakening DX Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LADX\DefaultIcon]
+@="\"$archidir\\ArchipelagoLinksAwakeningClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LADX\shell\open\command]
+@="\"$archidir\\ArchipelagoLinksAwakeningClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.aptloz]
+@="Archipelago.TLoZ"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.TLoZ]
+@="Archipelago The Legend of Zelda Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.TLoZ\DefaultIcon]
+@="\"$archidir\\ArchipelagoZelda1Client.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.TLoZ\shell\open\command]
+@="\"$archidir\\ArchipelagoZelda1Client.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apadvn]
+@="Archipelago.Advn"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.Advn]
+@="Archipelago Adventure Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.Advn\DefaultIcon]
+@="\"$archidir\\ArchipelagoAdventureClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.Advn\shell\open\command]
+@="\"$archidir\\ArchipelagoAdventureClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apyi]
+@="Archipelago.YI"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.YI]
+@="Archipelago Yoshi's Island Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.YI\DefaultIcon]
+@="\"$archidir\\ArchipelagoSNIClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.YI\shell\open\command]
+@="\"$archidir\\ArchipelagoSNIClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apygo06]
+@="Archipelago.YGO06"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.YGO06]
+@="Archipelago Yu-Gi-Oh 2006 Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.YGO06\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.YGO06\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apcrystal]
+@="Archipelago.PkmnC"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnC]
+@="Archipelago Pokemon Crystal Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnC\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnC\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apfirered]
+@="Archipelago.PkmnFR"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnFR]
+@="Archipelago Pokemon FireRed Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnFR\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnFR\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apleafgreen]
+@="Archipelago.PkmnLG"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnLG]
+@="Archipelago Pokemon LeafGreen Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnLG\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.PkmnLG\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apooa]
+@="Archipelago.OoA"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoA]
+@="Archipelago Oracle of Ages Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoA\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoA\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apoos]
+@="Archipelago.OoS"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoS]
+@="Archipelago Oracle of Seasons Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoS\DefaultIcon]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.OoS\shell\open\command]
+@="\"$archidir\\ArchipelagoBizHawkClient.exe\" \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\.apladxb]
+@="Archipelago.LADXBeta"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LADXBeta]
+@="Archipelago Links Awakening DX (Beta) Patch"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LADXBeta\DefaultIcon]
+@="\"$archidir\\ArchipelagoLauncher.exe\",0"
+
+[HKEY_CURRENT_USER\Software\Classes\Archipelago.LADXBeta\shell\open\command]
+@="\"$archidir\\ArchipelagoLauncher.exe\" \"%1\""

@@ -16,7 +16,19 @@
     "post_install": [
         "Get-ChildItem \"$persist_dir\" -File | % {",
         "   Copy-Item -LiteralPath $_ -Destination \"$dir\" -Force",
-        "}"
+        "}",
+        "$archidir = \"$dir\".Replace('\\', '\\\\')",
+        "'install-associations', 'uninstall-associations' | ForEach-Object {",
+        "    if (Test-Path \"$bucketsdir\\spiraster\\scripts\\$app\\$_.reg\") {",
+        "        $content = Get-Content \"$bucketsdir\\spiraster\\scripts\\$app\\$_.reg\"",
+        "        $content = $content.Replace('$archidir', $archidir)",
+        "        if ($global) {",
+        "            $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "        }",
+        "    }",
+        "    $content | Set-Content -Path \"$dir\\$_.reg\" -Encoding ascii",
+        "}",
+        "reg import \"$dir\\install-associations.reg\""
     ],
     "bin": [
         [
@@ -38,6 +50,9 @@
         "   $_.Name -match '\\.(yaml|gb|nes|sfc|z64|bin|a26)'",
         "} | % {",
         "   Copy-Item -LiteralPath $_ -Destination \"$persist_dir\" -Force",
+        "}",
+        "if ($cmd -eq 'uninstall') {",
+        "   reg import \"$dir\\uninstall-associations.reg\" ",
         "}"
     ],
     "checkver": {
