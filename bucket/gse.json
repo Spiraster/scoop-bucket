@@ -1,45 +1,45 @@
 {
-    "version": "0.1",
+    "version": "0.3",
     "description": "A Game Boy, Game Boy Color, and Game Boy Advance emulator with a focus on accuracy and speedrunning features.",
-    "homepage": "https://github.com/CasualPokePlayer/GSR",
+    "homepage": "https://github.com/CasualPokePlayer/GSE",
     "license": "MPL-2.0",
     "notes": "BIOS files are required in order to load ROMs for a given system.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CasualPokePlayer/GSR/releases/download/v0.1/GSR-win-x64.zip",
-            "hash": "984ede67314ea5eb1b64c13e75c2d32080f72f17614e67d84b36c3c074507920"
+            "url": "https://github.com/CasualPokePlayer/GSE/releases/download/v0.3/GSE-win-x64.zip",
+            "hash": "a1ace5211a522ef0f2e00195bb1521b9eb3ba8f84dcc67b1159b8aa476ce593d"
         }
     },
     "post_install": [
         "New-Item \"$dir\\portable.txt\" | Out-Null",
-        "if (Test-Path \"$persist_dir\\gsr_config.json\") {",
-        "   Copy-Item \"$persist_dir\\gsr_config.json\" \"$dir\\gsr_config.json\"",
+        "if (Test-Path \"$persist_dir\\gse_config.json\") {",
+        "   Copy-Item \"$persist_dir\\gse_config.json\" \"$dir\\gse_config.json\"",
         "} else {",
-        "   Set-Content \"$dir\\gsr_config.json\" \"{\"\"SavePathLocation\"\": 1,\"\"StatePathLocation\"\": 1}\"",
+        "   Set-Content \"$dir\\gse_config.json\" \"{\"\"SavePathLocation\"\": 1,\"\"StatePathLocation\"\": 1}\"",
         "}"
     ],
-    "bin": "GSR.exe",
+    "bin": "GSE.exe",
     "shortcuts": [
         [
-            "GSR.exe",
-            "GSR"
+            "GSE.exe",
+            "GSE"
         ]
     ],
-    "##": "Can't persist config file. GSR breaks the link when writing.",
+    "##": "Can't persist config file. GSE breaks the link when writing.",
     "persist": [
         "Save",
         "State"
     ],
     "pre_uninstall": [
-        "if (Test-Path \"$dir\\gsr_config.json\") {",
-        "   Copy-Item \"$dir\\gsr_config.json\" \"$persist_dir\\gsr_config.json\" -Force",
+        "if (Test-Path \"$dir\\gse_config.json\") {",
+        "   Copy-Item \"$dir\\gse_config.json\" \"$persist_dir\\gse_config.json\" -Force",
         "}"
     ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/CasualPokePlayer/GSR/releases/download/v$version/GSR-win-x64.zip"
+                "url": "https://github.com/CasualPokePlayer/GSE/releases/download/v$version/GSE-win-x64.zip"
             }
         }
     }
