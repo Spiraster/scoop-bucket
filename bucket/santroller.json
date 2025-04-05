@@ -1,12 +1,12 @@
 {
-    "version": "10.3.30",
+    "version": "10.3.32",
     "description": "Tool for programming microcontrollers to emulate various rhythm game controllers",
     "homepage": "https://santroller.tangentmc.net",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Santroller/Santroller/releases/download/v10.3.30/SantrollerConfigurator-win-Portable.zip",
-            "hash": "3055534866fca9aeb831ff21b1ee5aa7d4c92d5c028e661258c63c774515e5a0"
+            "url": "https://github.com/Santroller/Santroller/releases/download/v10.3.32/SantrollerConfigurator-win-Portable.zip",
+            "hash": "8f20337fb196a6943a27cd4d11a6748e3ca05341790a44d182119368c688bf01"
         }
     },
     "extract_dir": "current",
