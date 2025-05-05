@@ -11,11 +11,12 @@
         }
     },
     "post_install": [
-        "ensure \"$persist_dir\\appdata\" | Out-Null",
-        "if (Test-Path \"$env:LOCALAPPDATA\\Zelda64Recompiled\") {",
-        "   Move-Item \"$env:LOCALAPPDATA\\Zelda64Recompiled\\*\" \"$persist_dir\\appdata\"",
+        "ensure \"$persist_dir\" | Out-Null",
+        "$appdata = \"$env:LOCALAPPDATA\\Zelda64Recompiled\"",
+        "if (Test-Path \"$appdata\") {",
+        "   Move-Item \"$appdata\\*\" \"$persist_dir\"",
         "}",
-        "New-Item -Type Junction -Path \"$env:LOCALAPPDATA\\Zelda64Recompiled\" -Target \"$persist_dir\\appdata\" | Out-Null"
+        "New-Item -Type Junction -Path \"$appdata\" -Target \"$persist_dir\" | Out-Null"
     ],
     "shortcuts": [
         [
