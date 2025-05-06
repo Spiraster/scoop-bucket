@@ -24,7 +24,7 @@
             "Zelda 64 Recompiled"
         ]
     ],
-    "post_uninstall": "Remove-Item \"$env:LOCALAPPDATA\\Zelda64Recompiled\"",
+    "post_uninstall": "Remove-Item \"$env:LOCALAPPDATA\\Zelda64Recompiled\" 2>&1 | Out-Null",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
