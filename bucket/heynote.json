@@ -13,15 +13,20 @@
         "Expand-7ZipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\" -Recurse"
     ],
-    "##": "The app breaks hard links on config.json when updating settings",
+    "##": [
+        "hard links on config.json break when updating settings",
+        "would link the whole folder if it wasn't full of chromium junk"
+    ],
     "post_install": [
         "$appdata = \"$env:APPDATA\\Heynote\"",
-        "ensure $appdata | Out-Null",
-        "if (Test-Path \"$persist_dir\\config.json\") {",
-        "   Copy-Item \"$persist_dir\\config.json\" \"$appdata\"",
-        "} else {",
-        "   $notes = \"$dir/notes\".Replace('\\', '/')",
-        "   Set-Content \"$appdata\\config.json\" \"{\"\"settings\"\":{\"\"autoUpdate\"\":false,\"\"bufferPath\"\":\"\"$notes\"\"}}\"",
+        "ensure \"$appdata\" | Out-Null",
+        "if (!(Test-Path \"$appdata\\config.json\"))",
+        "   if (Test-Path \"$persist_dir\\config.json\") {",
+        "      Copy-Item \"$persist_dir\\config.json\" \"$appdata\"",
+        "   } else {",
+        "      $notes = \"$dir/notes\".Replace('\\', '/')",
+        "      Set-Content \"$appdata\\config.json\" \"{\"\"settings\"\":{\"\"autoUpdate\"\":false,\"\"bufferPath\"\":\"\"$notes\"\"}}\"",
+        "   }",
         "}"
     ],
     "shortcuts": [
