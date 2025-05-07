@@ -1,0 +1,24 @@
+{
+    "version": "9.5.6",
+    "description": "Tool for forcing games to run in borderless fullscreen mode",
+    "homepage": "https://github.com/Codeusa/Borderless-Gaming",
+    "license": "GPL-2.0-or-later",
+    "url": "https://github.com/portapps/borderless-gaming-portable/releases/download/9.5.6-3/BorderlessGaming-win32-9.5.6-setup.exe",
+    "hash": "250d2d883cb9f5a05a60be5b74191ca357489686a979cf7832fcb4c5f0522eda",
+    "innosetup": true,
+    "post_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "$appdata = \"$env:APPDATA\\Andrew Sampson\\Borderless Gaming\"",
+        "if (Test-Path \"$appdata\") {",
+        "   Move-Item \"$appdata\\*\" \"$persist_dir\"",
+        "}",
+        "New-Item -Type Junction -Path \"$appdata\" -Target \"$persist_dir\" | Out-Null"
+    ],
+    "shortcuts": [
+        [
+            "BorderlessGaming.exe",
+            "Borderless Gaming"
+        ]
+    ],
+    "post_uninstall": "Remove-Item \"$env:APPDATA\\Andrew Sampson\" -Recurse 2>&1 | Out-Null"
+}
