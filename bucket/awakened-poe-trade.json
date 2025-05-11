@@ -34,7 +34,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v$version/Awakened-PoE-Trade-$version.exe"
+                "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v$version/Awakened-PoE-Trade-$version.exe#/dl.7z"
             }
         }
     }
