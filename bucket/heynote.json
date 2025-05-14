@@ -20,7 +20,7 @@
     "post_install": [
         "$appdata = \"$env:APPDATA\\Heynote\"",
         "ensure \"$appdata\" | Out-Null",
-        "if (!(Test-Path \"$appdata\\config.json\"))",
+        "if (!(Test-Path \"$appdata\\config.json\")) {",
         "   if (Test-Path \"$persist_dir\\config.json\") {",
         "      Copy-Item \"$persist_dir\\config.json\" \"$appdata\"",
         "   } else {",
