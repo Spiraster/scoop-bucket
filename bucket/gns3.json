@@ -22,14 +22,16 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/GNS3/gns3-gui"
+        "url": "https://api.github.com/repositories/13111393/releases",
+        "jsonpath": "$[?(@.tag_name =~ /^v3/)].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/GNS3/gns3-gui/releases/download/v$version/GNS3-$version-all-in-one.exe#/dl.7z",
                 "hash": {
-                    "url": "https://github.com/GNS3/gns3-gui/releases/download/v$version/GNS3-$version-all-in-one.exe.sha256"
+                    "url": "$baseurl/GNS3-$version-all-in-one.exe.sha256"
                 }
             }
         }
