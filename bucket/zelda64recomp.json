@@ -29,7 +29,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/download/v$version/Zelda64Recompiled-v$version-Windows-x64.zip"
+                "url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/download/v$version/Zelda64Recompiled-v$version-Windows.zip"
             }
         }
     }
