@@ -2,7 +2,7 @@
     "version": "2.2.2",
     "description": "An image-based autosplitter for speedrunning on console or PC.",
     "homepage": "https://github.com/Toufool/AutoSplit",
-    "license": "Unknown",
+    "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Toufool/AutoSplit/releases/download/v2.2.2/AutoSplit.v2.2.2.Python.3.12.zip",
@@ -32,7 +32,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Toufool/AutoSplit/releases/download/v$version/AutoSplit.v$version.Python.3.12.zip"
+                "url": "https://github.com/Toufool/AutoSplit/releases/download/v$version/AutoSplit.v$version.for.windows-latest.Python.3.13.zip"
             }
         }
     }
