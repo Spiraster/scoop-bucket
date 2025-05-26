@@ -26,6 +26,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Nonary/PlayNiteWatcher/releases/download/$version/PlayniteWatcher.zip"
+        "url": "https://github.com/Nonary/PlayNiteWatcher/releases/download/v$version/PlayniteWatcher.zip"
     }
 }
