@@ -1,13 +1,13 @@
 {
-    "version": "0.6.2_upd3",
+    "version": "0.7_stable",
     "description": "DISM GUI front-end for managing & manipulating Windows images",
     "homepage": "https://github.com/CodingWonders/DISMTools",
     "license": "GPL-3.0-or-later",
     "notes": "Some features require the Windows ADK and WinPE add-on",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CodingWonders/DISMTools/releases/download/v0.6.2_upd3/DISMTools.zip",
-            "hash": "155ad08990c6461bf173450d9d2a351cfe66cce3ef261bdfb8f373043a061609"
+            "url": "https://github.com/CodingWonders/DISMTools/releases/download/v0.7_stable/DISMTools.zip",
+            "hash": "57d5633d80cf57bf68b44924de54b0f268a9ee31cd143b0aba02145ba144cb6b"
         }
     },
     "shortcuts": [
