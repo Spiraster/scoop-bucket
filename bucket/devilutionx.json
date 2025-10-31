@@ -1,17 +1,17 @@
 {
-    "version": "1.5.4",
+    "version": "1.5.5",
     "description": "Reverse-engineered port of Diablo with modern improvements",
     "homepage": "https://github.com/diasurgical/DevilutionX",
     "license": "https://github.com/diasurgical/DevilutionX/blob/master/LICENSE.md",
     "notes": "'DIABDAT.MPQ' from the Diablo CD must be placed in the 'data' folder",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.4/devilutionx-windows-x86_64.zip",
-            "hash": "b8dce48376f25cc97087ce570b6d02813abb469e420e3804daec3e0c34d82801"
+            "url": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.5/devilutionx-windows-x86_64.zip",
+            "hash": "a20cfb62cd611f76aac78f9bf09a28f57794fbfe63ae6da9245deca446680b2b"
         },
         "32bit": {
-            "url": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.4/devilutionx-windows-i386.zip",
-            "hash": "c8ba82ffb89d099bc31aa5de79d26f796f523d8b8ac1622a12e86fe44b44ff12"
+            "url": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.5/devilutionx-windows-i386.zip",
+            "hash": "aa2c7051495cb53a8aaf7ac1f65d3537e6f52538f96797be38aa06a4aaa90d15"
         }
     },
     "extract_dir": "devilutionx",
