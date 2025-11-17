@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/clonehero-game/releases/releases/download/V1.0.0.4080/CloneHero-win64.exe",
-            "hash": "54e730eefaf5211095a4535995491ec2693ab60b6e9a2e4238a6b36e33a7b626"
+            "hash": "09d55f08adc98e59aec786d6a7fe8ee23c0ee8816923127279ab97e5f13a6d89"
         },
         "32bit": {
             "url": "https://github.com/clonehero-game/releases/releases/download/V1.0.0.4080/CloneHero-win32.exe",
-            "hash": "6b50582b7deb760c4788698e8c8f096dfb2091d03ab11c481eb5972560669b60"
+            "hash": "1a68341a1d2eac80e1a7449ba967517ea05a60b3bd37fc42da290b3c3da60de3"
         }
     },
     "innosetup": true,
