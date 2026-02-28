@@ -38,7 +38,7 @@
             ]
         }
     },
-    "checkver": "Version:\\s+([\\d.]+)",
+    "checkver": "Version:\\s+([\\d\\.]+)",
     "autoupdate": {
         "url": "https://lockhunter.com/assets/exe/lockhuntersetup_portable_$dashVersion.exe"
     }

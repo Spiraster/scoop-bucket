@@ -24,7 +24,7 @@
     "checkver": {
         "url": "https://api.github.com/repositories/13111393/releases",
         "jsonpath": "$[?(@.tag_name =~ /^v3/)].tag_name",
-        "regex": "v([\\d.]+)"
+        "regex": "v([\\d\\.]+)"
     },
     "autoupdate": {
         "architecture": {

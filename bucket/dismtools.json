@@ -16,7 +16,7 @@
             "DISMTools"
         ]
     ],
-    "checkver": "v([\\d.]+_[a-z]+\\d?)",
+    "checkver": "v([\\d\\.]+_[a-z]+\\d?)",
     "autoupdate": {
         "architecture": {
             "64bit": {
