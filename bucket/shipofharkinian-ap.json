@@ -4,6 +4,9 @@
     "homepage": "https://github.com/HarbourMasters/Archipelago-SoH/",
     "license": "MIT",
     "notes": "Ship of Harkinian fork with support for the Archipelago randomizer",
+    "suggest": {
+        "archipelago": "spiraster/archipelago"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_1.2.1/SoH_Archipelago_1-2-x_Windows.zip",
