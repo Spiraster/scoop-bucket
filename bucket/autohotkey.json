@@ -1,0 +1,57 @@
+{
+    "version": "2.0.21",
+    "description": "Macro and automation scripting utility",
+    "homepage": "https://www.autohotkey.com/",
+    "license": "GPL-2.0-or-later",
+    "url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.21/AutoHotkey_2.0.21.zip",
+    "hash": "7386f45be928f0825ffbe78811187636d72efcbd264e2fd406e7e045d681a626",
+    "extract_to": "temp",
+    "pre_install": [
+        "'AutoHotkey64.exe', 'UX\\WindowSpy.ahk' | % {",
+        "   Move-Item \"$dir\\temp\\$_\" \"$dir\"",
+        "}",
+        "New-Item -Path \"$dir\\inc\" -ItemType Directory | Out-Null",
+        "Move-Item \"$dir\\temp\\UX\\inc\\spy.ico\" \"$dir\\inc\"",
+        "Remove-Item \"$dir\\temp\" -Recurse"
+    ],
+    "post_install": [
+        "$dirPath = \"$dir\".Replace('\\', '\\\\')",
+        "Get-ChildItem \"$bucketsdir\\$bucket\\scripts\\$app\\*.reg\" | ForEach-Object {",
+        "    $content = (Get-Content \"$_\").Replace('$dir', $dirPath)",
+        "    if ($global) {",
+        "        $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "    }",
+        "    Set-Content \"$dir\\$($_.Name)\" $content -Encoding utf8",
+        "}",
+        "reg import \"$dir\\install-associations.reg\" | Out-Null"
+    ],
+    "bin": [
+        [
+            "AutoHotkey64.exe",
+            "autohotkey"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "WindowSpy.ahk",
+            "Window Spy",
+            "",
+            "inc\\spy.ico"
+        ]
+    ],
+    "pre_uninstall": [
+        "if ($cmd -eq 'uninstall') {",
+        "   reg import \"$dir\\uninstall-associations.reg\" | Out-Null",
+        "}"
+    ],
+    "checkver": {
+        "github": "https://github.com/AutoHotkey/AutoHotkey"
+    },
+    "autoupdate": {
+        "url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v$version/AutoHotkey_$version.zip",
+        "hash": {
+            "url": "https://github.com/AutoHotkey/AutoHotkey/releases/tag/v$version",
+            "regex": "$sha256</code>[\\s]+AutoHotkey_$version\\.zip"
+        }
+    }
+}

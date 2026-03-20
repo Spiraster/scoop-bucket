@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\.ahk]
+@="AutoHotkeyScript"
+
+[HKEY_CURRENT_USER\Software\Classes\AutoHotkeyScript]
+@="AutoHotkey Script"
+
+[HKEY_CURRENT_USER\Software\Classes\AutoHotkeyScript\DefaultIcon]
+@="$dir\\AutoHotkey64.exe,1"
+
+[HKEY_CURRENT_USER\Software\Classes\AutoHotkeyScript\shell\open\command]
+@="\"$dir\\AutoHotkey64.exe\" \"%1\""
