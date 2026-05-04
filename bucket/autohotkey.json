@@ -1,10 +1,10 @@
 {
-    "version": "2.0.24",
+    "version": "2.0.26",
     "description": "Macro and automation scripting utility",
     "homepage": "https://www.autohotkey.com/",
     "license": "GPL-2.0-or-later",
-    "url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.24/AutoHotkey_2.0.24.zip",
-    "hash": "3e0713009b5d9155ac2cb255bdb9e9352f556a7dca15f822f6c67e904cb86d35",
+    "url": "https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.26/AutoHotkey_2.0.26.zip",
+    "hash": "43522aa3122a57784ac5db30abf85c2244475c36acd7796e2c993355f9e926ae",
     "extract_to": "temp",
     "pre_install": [
         "'AutoHotkey64.exe', 'UX\\WindowSpy.ahk' | % {",
