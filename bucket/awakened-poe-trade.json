@@ -1,12 +1,12 @@
 {
-    "version": "3.29.103",
+    "version": "3.29.104",
     "description": "Path of Exile trading app for price checking.",
     "homepage": "https://snosme.github.io/awakened-poe-trade/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.29.103/Awakened-PoE-Trade-3.29.103.exe#/dl.7z",
-            "hash": "55e2375605c0704b49f3007151c32b892901749d47aa5d90bba010ba65bf8ba7"
+            "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.29.104/Awakened-PoE-Trade-3.29.104.exe#/dl.7z",
+            "hash": "345f0a86defccdfa66eb0ab746a6a8deef391795fa3a3ad8af4fd4df1a3a8408"
         }
     },
     "pre_install": [
