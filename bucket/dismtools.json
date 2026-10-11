@@ -16,7 +16,10 @@
             "DISMTools"
         ]
     ],
-    "checkver": "v([\\d\\.]+_[a-z]+\\d?)",
+    "checkver": {
+        "github": "https://github.com/CodingWonders/DISMTools",
+        "regex": "v([\\d\\.]+_[a-z]+\\d?)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {

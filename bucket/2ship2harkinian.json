@@ -44,14 +44,14 @@
         "}"
     ],
     "checkver": {
-        "github": "https://github.com/HarbourMasters/2ship2harkinian/",
-        "regex": "(?<majorName>(\\w+))\\s(?<minorName>(\\w+))\\s(?<version>([\\d\\.]+))",
-        "replace": "${version}"
+        "github": "https://api.github.com/repos/HarbourMasters/2ship2harkinian/releases/latest",
+        "jsonpath": "$.name",
+        "regex": "(?<major>\\w+)\\s(?<minor>\\w+)\\s(?<version>[\\d\\.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/HarbourMasters/2ship2harkinian/releases/download/$version/2Ship-$matchMajorname-$matchMinorname-Win64.zip"
+                "url": "https://github.com/HarbourMasters/2ship2harkinian/releases/download/$version/2Ship-$matchMajor-$matchMinor-Win64.zip"
             }
         }
     }

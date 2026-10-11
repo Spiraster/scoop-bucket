@@ -48,11 +48,14 @@
         "   }",
         "}"
     ],
-    "checkver": "SoH_([\\d\\.]+)",
+    "checkver": {
+        "github": "https://github.com/HarbourMasters/Archipelago-SoH",
+        "regex": "(?i)(?<tag>soh_(?<version>[\\d\\.]+))"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/HarbourMasters/Archipelago-SoH/releases/download/SoH_$version/SoH_Archipelago_$majorVersion-$minorVersion-x_Windows.zip"
+                "url": "https://github.com/HarbourMasters/Archipelago-SoH/releases/download/$matchTag/SoH_Archipelago_$dashVersion_Windows.zip"
             }
         }
     }

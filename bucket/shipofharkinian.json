@@ -49,14 +49,14 @@
         "}"
     ],
     "checkver": {
-        "github": "https://github.com/HarbourMasters/Shipwright/",
-        "regex": "(?<majorName>(\\w+))\\s(?<minorName>(\\w+))\\s(?<version>([\\d\\.]+))",
-        "replace": "${version}"
+        "github": "https://api.github.com/repos/HarbourMasters/Shipwright/releases/latest",
+        "jsonpath": "$.name",
+        "regex": "(?<major>\\w+)\\s(?<minor>\\w+)\\s(?<version>[\\d\\.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/HarbourMasters/Shipwright/releases/download/$version/SoH-$matchMajorname-$matchMinorname-Win64.zip"
+                "url": "https://github.com/HarbourMasters/Shipwright/releases/download/$version/SoH-$matchMajor-$matchMinor-Win64.zip"
             }
         }
     }
